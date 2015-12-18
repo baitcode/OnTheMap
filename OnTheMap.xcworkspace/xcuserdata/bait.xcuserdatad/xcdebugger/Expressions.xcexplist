@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "UdacityClient.(receivedRequestDecorator(UdacityClient) -&gt; (([String : AnyObject]) -&gt; (), ([String : AnyObject]) -&gt; ()) -&gt; (Int, [String : AnyObject]?) -&gt; ()).(closure #1):UdacityClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data[&quot;body&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ApiCallable.call&lt;A&gt;(Method, url : String, parameters : [String : AnyObject]?, headers : [String : String], onSuccess : (Int, A?) -&gt; (), onError : ([String : AnyObject]) -&gt; ()) -&gt; ():ApiClient.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UdacityClient.deserialize(String) -&gt; [String : AnyObject]?:UdacityClient.swift">
+      </ContextState>
+      <ContextState
+         contextName = "specialized UserManager.(login(UserManager) -&gt; (email : String, password : String, onSuccess : (User) -&gt; (), onError : (String) -&gt; ()) -&gt; ()).(closure #1):Models.swift">
+      </ContextState>
+      <ContextState
+         contextName = "StudentInformationManager.(loadList(StudentInformationManager) -&gt; () -&gt; Promise&lt;[StudentInformation]&gt;).(closure #1):StudentInformation.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Date(string: data[&quot;updatedAt&quot;]!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ApiCallable.(call&lt;A&gt; (ApiCallable&lt;A&gt;) -&gt; (Method, url : String, parameters : [String : AnyObject], headers : [String : String], onSuccess : (Int, A?) -&gt; (), onError : ([String : AnyObject]) -&gt; ()) -&gt; ()).(closure #1):ApiClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mergedParameters">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ApiCallable.(call&lt;A&gt; (ApiCallable&lt;A&gt;) -&gt; (Method, url : String, parameters : [String : AnyObject]?, headers : [String : String], onSuccess : (Int, A?) -&gt; (), onError : ([String : AnyObject]) -&gt; ()) -&gt; ()).(closure #1):ApiClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "error!.localizedDescription">
+            </PersistentString>
+            <PersistentString
+               value = "error!.userInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StudentInformation.init(data : [String : AnyObject]) -&gt; StudentInformation:StudentInformation.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(data[&quot;createdAt&quot;]!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UdacityClient.logout(onSuccess : ([String : AnyObject]) -&gt; (), onError : ([String : AnyObject]) -&gt; ()) -&gt; ():UdacityClient.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ShareEnterAddress.viewDidLoad() -&gt; ():ShareEnterAddress.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "builder.getText()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UdacityClient.(recievedRequestDecorator(UdacityClient) -&gt; (([String : AnyObject]) -&gt; (), ([String : AnyObject]) -&gt; ()) -&gt; (Int, [String : AnyObject]?) -&gt; ()).(closure #1):UdacityClient.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static FB.(login(FB.Type) -&gt; (fromViewController : UIViewController) -&gt; Promise&lt;String&gt;).(closure #1).(closure #1):FBRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "FBSDKAccessToken.currentAccessToken().tokenString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UdacityClient.(receivedErrorDecorator(UdacityClient) -&gt; ((ErrorType) -&gt; ()) -&gt; ([String : AnyObject]?) -&gt; ()).(closure #1):UdacityClient.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UserManager.(login(UserManager) -&gt; (email : String, password : String, onSuccess : (User) -&gt; (), onError : (String) -&gt; ()) -&gt; ()).(closure #2):Models.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ShareUrlController.submitButtonClicked(AnyObject) -&gt; ():ShareUrlController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.placemark.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

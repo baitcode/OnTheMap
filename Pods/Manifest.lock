@@ -1,0 +1,47 @@
+PODS:
+  - Bolts (1.5.0):
+    - Bolts/AppLinks (= 1.5.0)
+    - Bolts/Tasks (= 1.5.0)
+  - Bolts/AppLinks (1.5.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.5.0)
+  - FBSDKCoreKit (4.9.0-beta2):
+    - Bolts (~> 1.5)
+  - FBSDKLoginKit (4.9.0-beta2):
+    - FBSDKCoreKit (~> 4.9.0-beta)
+  - OMGHTTPURLRQ (3.0.2):
+    - OMGHTTPURLRQ/RQ (= 3.0.2)
+  - OMGHTTPURLRQ/FormURLEncode (3.0.2)
+  - OMGHTTPURLRQ/RQ (3.0.2):
+    - OMGHTTPURLRQ/FormURLEncode
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (3.0.2)
+  - PromiseKit (3.0.0):
+    - PromiseKit/Foundation (= 3.0.0)
+    - PromiseKit/QuartzCore (= 3.0.0)
+    - PromiseKit/UIKit (= 3.0.0)
+  - PromiseKit/CorePromise (3.0.0)
+  - PromiseKit/Foundation (3.0.0):
+    - OMGHTTPURLRQ (~> 3.0.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (3.0.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (3.0.0):
+    - PromiseKit/CorePromise
+  - SwiftSpinner (0.8.0)
+
+DEPENDENCIES:
+  - FBSDKCoreKit (= 4.9.0-beta2)
+  - FBSDKLoginKit (= 4.9.0-beta2)
+  - PromiseKit (= 3.0.0)
+  - SwiftSpinner (= 0.8.0)
+
+SPEC CHECKSUMS:
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  FBSDKCoreKit: d49cbf69741e3c5732166ec9ff4cbd9b288dd53e
+  FBSDKLoginKit: d32e83c0d2d39ef74a942543cacae2dc4de7d088
+  OMGHTTPURLRQ: 8376dc887d76a5a7e2a67881dc788f917a2f437c
+  PromiseKit: 665540a1eb43156446872dcf49ed7dee6ebbe13b
+  SwiftSpinner: 11c2c5ec7443d92f3026d3067ca8a91d4adef13f
+
+COCOAPODS: 0.39.0.beta.5
