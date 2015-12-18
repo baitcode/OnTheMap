@@ -84,13 +84,14 @@ class ParseClient: ApiCallable<[String:AnyObject]> {
     
     func getStudentInformation(studentId: String? = nil) -> Promise<[String:AnyObject]>
     {
-        var whereClause = ""
+        var whereClause = "?order=-updatedAt"
         if let id = studentId {
-            whereClause = "?where={\"uniqueKey\":\"\(id)\"}".stringByAddingPercentEncodingWithAllowedCharacters(
-                NSCharacterSet.URLQueryAllowedCharacterSet()
-            )!
+            whereClause = "?order=-updatedAt&where={\"uniqueKey\":\"\(id)\"}"
         }
         
+        whereClause = whereClause.stringByAddingPercentEncodingWithAllowedCharacters(
+            NSCharacterSet.URLQueryAllowedCharacterSet()
+        )!
         
         return Promise(resolvers: {
             fullfill, reject in

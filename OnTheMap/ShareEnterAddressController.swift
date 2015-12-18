@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MapKit
+import SwiftSpinner
 
 
 class ShareEnterAddressController: UIViewController, UITextFieldDelegate {
@@ -38,8 +39,8 @@ class ShareEnterAddressController: UIViewController, UITextFieldDelegate {
         
         self.fldLocation.delegate = self
         self.fldLocation.becomeFirstResponder()
-//        self.fldLocation.text = "Moscow"
         self.selectedPlacemark = nil
+        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -53,10 +54,14 @@ class ShareEnterAddressController: UIViewController, UITextFieldDelegate {
     
     @IBAction func findOnMapButtonPressed(sender: AnyObject) {
         let geocoder = CLGeocoder()
+
+        SwiftSpinner.show("Geocoding...")
         geocoder.geocodeAddressString(
             self.fldLocation.text!,
             completionHandler: {
                 placemarks, error in
+                SwiftSpinner.hide()
+                
                 if error != nil {
                     UAlerts.show(.Error, at: self, withText: error!.localizedDescription)
                 }
@@ -67,8 +72,6 @@ class ShareEnterAddressController: UIViewController, UITextFieldDelegate {
                 } else {
                     UAlerts.show(.Error, at: self, withText: "Nothing found")
                 }
-                
-
             }
         )
         

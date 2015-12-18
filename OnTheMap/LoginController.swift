@@ -90,15 +90,11 @@ class LoginController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func buttonSignUpThroughFacebookClicked(sender: AnyObject) {
-        SwiftSpinner.show("Connecting to satellite...")
-        
         FB.login(fromViewController: self).then({
             token in
             return UserManager.instance.login(token: token)
         }).then({ user in
             self.gotoApp()
-        }).always({
-            SwiftSpinner.hide()
         }).error({ error in
             UAlerts.show(.Error, at: self, withTextFrom: error as! ApiError)
         })

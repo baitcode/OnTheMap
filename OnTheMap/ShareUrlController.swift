@@ -41,7 +41,6 @@ class ShareUrlController: UIViewController, UITextFieldDelegate {
         
         self.fldUrl.delegate = self
         self.fldUrl.becomeFirstResponder()
-//        self.fldUrl.text = "http://www.ya.ru"
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

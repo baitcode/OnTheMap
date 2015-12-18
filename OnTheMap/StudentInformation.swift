@@ -98,36 +98,25 @@ class StudentInformationManager {
             locationDatas in
             let results = locationDatas["results"]!
             var data: [String:AnyObject] = [:]
+
+            let user = UserManager.instance.currentUser!
+            data = [
+                "uniqueKey": id,
+                "firstName": user.firstName,
+                "lastName": user.lastName,
+                "mapString": location,
+                "mediaURL": url,
+                "latitude": lat,
+                "longitude": long
+            ]
+
             if results.count > 0 {
                 var result = results[0] as! [String:AnyObject]
-                
-                data = [
-                    "uniqueKey": result["uniqueKey"]!,
-                    "firstName": result["firstName"]!,
-                    "lastName": result["lastName"]!,
-                    "mapString": result["mapString"]!,
-                    "mediaURL": result["mediaURL"]!,
-                    "latitude": result["latitude"]!,
-                    "longitude": result["longitude"]!
-                ]
-                
                 StudentInformationManager.client.updateStudentInformation(
                     result["objectId"] as! String,
                     data: data
                 )
-                
             } else {
-                let user = UserManager.instance.currentUser!
-                
-                data = [
-                    "uniqueKey": id,
-                    "firstName": user.firstName,
-                    "lastName": user.lastName,
-                    "mapString": location,
-                    "mediaURL": url,
-                    "latitude": lat,
-                    "longitude": long
-                ]
                 StudentInformationManager.client.createStudentInformation(data)
             }
             return self.loadList()
@@ -135,47 +124,4 @@ class StudentInformationManager {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
